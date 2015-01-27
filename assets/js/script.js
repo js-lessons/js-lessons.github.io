@@ -1,33 +1,18 @@
-// Browser detection for when you get desparate. A measure of last resort.
-// http://rog.ie/post/9089341529/html5boilerplatejs
-// sample CSS: html[data-useragent*='Chrome/13.0'] { ... }
-//
-// var b = document.documentElement;
-// b.setAttribute('data-useragent',  navigator.userAgent);
-// b.setAttribute('data-platform', navigator.platform);
+var jsLessons = angular.module('jsLessons', ['ui.router']);
 
+jsLessons.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  $urlRouterProvider.otherwise('/');
+  $locationProvider.html5Mode({ enabled: true, requireBase: false });
 
-// remap jQuery to $
-(function($){
-
-	/* trigger when page is ready */
-	$(document).ready(function (){
-	
-		// your functions go here
-	
-	});
-	
-	
-	/* optional triggers
-	
-	$(window).load(function() {
-		
-	});
-	
-	$(window).resize(function() {
-		
-	});
-	
-	*/
-
-})(window.jQuery);
+  $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'views/lessons/1.html'
+    })
+    .state('lessons', {
+      url: '/lessons/:lessonId',
+      templateUrl: function($stateParams) {
+        return 'views/lessons/'+ $stateParams.lessonId + '.html';
+      }
+    })
+});

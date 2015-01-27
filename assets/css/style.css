@@ -1,0 +1,179 @@
+body {
+	font: 16px Helmet, Freesans, sans-serif;
+}
+
+body, select, input, textarea {
+	color: #323330;
+}
+
+a 			{ color: #9c8907; text-decoration: none; }
+a:hover { color: #dbc218; }
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+
+body > .wrapper {
+	margin: 0 auto;
+	width: 980px;
+}
+
+/* header */
+.wrapper > header {
+	margin: 30px 0;
+	text-align: center;
+}
+
+.title h1,
+.title h2 {
+	display: inline-block;
+}
+
+.title h1 a {
+	background: #f0db4f;
+	color: #323330;
+	display: inline-block;
+	font-size: 60px;
+	font-weight: bold;
+	padding: 50px 10px 0px 10px;
+}
+
+.title h2 {
+	font-size: 40px;
+	vertical-align: bottom;
+}
+.title h2 span {
+	display: block;
+	font-size: 14px;
+}
+.title h2 a {
+	color: #999;
+}
+
+/* nav */
+nav {
+	border-top: 1px solid #f1f1f1;
+//	border-bottom: 1px solid #f1f1f1;
+	margin-top: 30px;
+}
+nav ol li {
+	display: inline-block;
+	letter-spacing: 0.1;
+	text-transform: uppercase;
+}
+nav ol li a {
+	color: #333;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+/* aside */
+aside {
+	display: inline-block;
+	margin: 20px 0;
+	vertical-align: top;
+	width: 200px;
+}
+
+aside ul li {
+	list-style: none;
+}
+
+aside ul li a {
+	color: #999;
+	display: block;
+	padding: 10px;
+}
+
+aside ul li a.active {
+	background: #f1f1f1;
+	color: #333;
+}
+
+aside ul li a:hover {
+	background: #f0db4f;
+	color: #323330;
+}
+
+/* section */
+section {
+	display: inline-block;
+	padding: 20px 20px 20px 50px;
+	vertical-align: top;
+	width: 775px;
+}
+
+/* article */
+article {
+	
+}
+
+article h1 {
+	color: #323330;
+	font-size: 30px;
+	line-height: 1.5;
+	margin: 0 0 1.5em;
+}
+
+article h2 {
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 1.6em 0;
+}
+
+article h3 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 1.6em 0;
+}
+
+article p {
+	line-height: 1.5;
+	margin: 1.5em 0;
+}
+
+/* footer */
+footer {
+	padding: 20px;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 960px) {
+	body > .wrapper {
+		padding: 0 20px;
+		width: 100%;
+	}
+
+	aside,
+	section {
+		display: block;
+		width: 100%;
+	}
+	aside {
+		border-bottom: 1px solid #f1f1f1;
+		padding: 0 20px 20px;
+	}
+	section {
+		padding: 20px;
+	}
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}

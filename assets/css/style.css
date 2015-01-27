@@ -125,19 +125,27 @@ article h1 {
 article h2 {
 	font-size: 24px;
 	line-height: 1.5;
-	margin: 1.6em 0;
+	margin: 1.6em 0 0.5em;
 }
 
 article h3 {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 1.5;
-	margin: 1.6em 0;
+	margin: 1.6em 0 0.5em;
 }
 
 article p {
 	line-height: 1.5;
 	margin: 1.5em 0;
+}
+
+article dd {
+  margin-bottom: 2em;
+}
+
+article dt {
+  margin-bottom: 0.8em;
 }
 
 /* footer */

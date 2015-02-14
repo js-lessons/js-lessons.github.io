@@ -2,13 +2,13 @@ var jsLessons = angular.module('jsLessons', ['ui.router']);
 
 jsLessons.constant('Table', Table);
 jsLessons.constant('objectToRows', objectToRows);
-jsLessons.constant('loadBuild', loadBuild);
 
 jsLessons.constant('HOMEWORKS', {
   'Program Structure': 'js-lessons/js-basics-1',
   'Functions': 'js-lessons/js-basics-2',
   'Objects and Arrays': 'js-lessons/js-basics-3',
-  'Higher order functions': 'js-lessons/js-basics-4'
+  'Higher order functions': 'js-lessons/js-basics-4',
+  'Objects and Prototypes': 'js-lessons/js-basics5'
 });
 
 jsLessons.constant('STUDENTS', [

@@ -153,6 +153,12 @@ footer {
 	padding: 20px;
 }
 
+/* students table */
+[js-students-table] {
+  font-size: 13px;
+  overflow-x: scroll;
+}
+
 /* Media queries
 -------------------------------------------------------------------------------*/
 

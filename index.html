@@ -20,7 +20,13 @@
 	<script src="//cdn.jsdelivr.net/angular.ui-router/0.2.13/angular-ui-router.min.js"></script>
 	<script src="//rawgit.com/js-lessons/homework-results/master/build/index.js"></script>
 
+	<script src="//rawgit.com/js-lessons/ascii-table/master/build/index.js"></script>
+
 	<script src="assets/js/app.js"></script>
+	<script src="assets/js/filters.js"></script>
+	<script src="assets/js/services.js"></script>
+	<script src="assets/js/controllers.js"></script>
+	<script src="assets/js/directives.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -31,18 +37,21 @@
 			<h2>lessons <span>from <a href='https://github.com/dra1n' title='github: Andrew Bakuta'>Andrew Bakuta</a></span></h2>
 		</div>
 
-		<nav>
-			<!-- <ol>
-				<li><a href="">Урок 1</a></li>
-				<li><a href="">Урок 2</a></li>
-			</ol>-->
-		</nav>
+		<!--<nav>-->
+       <!--<ol>-->
+         <!--<li></li>-->
+      <!--</ol>-->
+		<!--</nav>-->
 	</header>
 
 	<aside>
     <ul ng-repeat="n in [] | range:6">
       <li><a ui-sref-active="active" ui-sref="lessons({lessonId: n})">Lesson {{ n }}</a></li>
 		</ul>
+
+    <ul>
+      <li><a ui-sref="results">Home work results</a></li>
+    </ul>
 	</aside>
 
 	<section>

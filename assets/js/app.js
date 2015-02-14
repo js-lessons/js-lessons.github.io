@@ -1,13 +1,14 @@
 var jsLessons = angular.module('jsLessons', ['ui.router']);
 
-jsLessons.filter('range', function() {
-  return function(input, total) {
-    total = parseInt(total);
-    for (var i=1; i <= total; i++) {
-      input.push(i);
-    }
-    return input;
-  };
+jsLessons.constant('Table', Table);
+jsLessons.constant('objectToRows', objectToRows);
+
+jsLessons.constant('HOMEWORKS', {
+  'Program Structure': 'js-lessons/js-basics-1',
+  'Functions': 'js-lessons/js-basics-2',
+  'Objects and Arrays': 'js-lessons/js-basics-3',
+  'Higher order functions': 'js-lessons/js-basics-4',
+  'Objects and Prototypes': 'js-lessons/js-basics5'
 });
 
 jsLessons.config(function($stateProvider, $urlRouterProvider) {

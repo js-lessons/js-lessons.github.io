@@ -8,7 +8,9 @@ jsLessons.constant('HOMEWORKS', {
   'Functions': 'js-lessons/js-basics-2',
   'Objects and Arrays': 'js-lessons/js-basics-3',
   'Higher order functions': 'js-lessons/js-basics-4',
-  'Objects and Prototypes': 'js-lessons/js-basics5'
+  'Objects and Prototypes': 'js-lessons/js-basics5',
+  'Modules': 'js-lessons/module.js',
+  'EventEmitter': 'js-lessons/stuff.js'
 });
 
 jsLessons.constant('STUDENTS', [

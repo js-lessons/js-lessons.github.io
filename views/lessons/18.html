@@ -1,0 +1,23 @@
+<h1 id="read-later-server">Read Later server</h1>
+<p>This sevice is meant to help to get content of the page without headers,
+sidebars and other irrelevant stuff.</p>
+<h2 id="install">Install</h2>
+<pre class="hljs"><code>git clone git@github.com:js-lessons/read-later-server.git
+cd read-later-server
+npm install
+npm start
+</code></pre><h2 id="to-run-tests">To run tests</h2>
+<pre class="hljs"><code>npm install
+npm test
+</code></pre><h2 id="read-later-api-uris">Read Later API URIs</h2>
+<p><strong>[GET] /scraper?url=&lt;url&gt;</strong></p>
+<p>Submit a GET request to fetch the content from the provided &lt;url&gt;. This will return a json object with the following fields:</p>
+<ul>
+<li>content</li>
+<li>url</li>
+<li>title</li>
+</ul>
+<p><strong>[GET] /scraper?url=&lt;url&gt;&amp;callback=&lt;callback&gt;</strong></p>
+<p>It supports jsonp protocol. Returns json wrapped in &lt;callback&gt;</p>
+<p><strong>[POST] /scraper</strong> [url: &lt;url&gt;]</p>
+<p>Submit a POST request to save data to Firebase.</p>
